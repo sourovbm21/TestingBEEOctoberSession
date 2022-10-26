@@ -1,4 +1,4 @@
-public class ClassOne {
+public class BasicConcepts {
 
     public static void main(String[] args) {
         //Data Type
