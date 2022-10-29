@@ -1,5 +1,8 @@
 public class BasicConcepts {
 
+
+
+
     public static void main(String[] args) {
         //Data Type
         int x = 880171523;//32 bit(-2*31 to 2*31-1)integer
