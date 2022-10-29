@@ -1,6 +1,4 @@
 package AccessModifier;
-
-
 public class ClassOne {
 
     public static void main(String[] args) {
@@ -39,7 +37,6 @@ public class ClassOne {
         }
 
     }
-
     public static int sum3(){
         int s=5;
         int b =5;
@@ -52,7 +49,6 @@ public class ClassOne {
     }
     public static int  two(int x,int y,int z ){
         int c = x+y/z;
-
         return c;
     }
 
