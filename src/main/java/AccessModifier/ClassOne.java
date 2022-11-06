@@ -1,6 +1,13 @@
 package AccessModifier;
 public class ClassOne {
 
+
+
+    //private --> Can be access only that class
+    //public --> Can be access from anywhere
+    //protected
+    //Default,package private --> Can be access only within the package
+
     int x =100;
     String s = "sourov";
     public  void sum(){
@@ -9,7 +16,7 @@ public class ClassOne {
        int  c = s+b;//8
       System.out.println("This is from sum method: "+c);
   }
-    public  int sum1(){
+    private  int sum1(){
         int s=5;
         int b =5;
         int  c = s+b;//10
@@ -34,6 +41,8 @@ public class ClassOne {
         int c = x+y;
         return c;
     }
+
+
     public  int  two(int x,int y,int z ){
         int c = x+y/z;
         return c;
