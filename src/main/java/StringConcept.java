@@ -19,21 +19,21 @@ public class StringConcept {
         System.out.println(s);
         System.out.println(s4);
         // String By creating object
-          StringBuffer  sbf = new StringBuffer("Good");//Sychronized ( Thread Safe )
-          sbf.deleteCharAt(0);
-          System.out.println(sbf);
-          StringBuilder  sb = new StringBuilder("Java");// Non Sychronized ( Not Thread Safe )
-          sb.append('s');
+        StringBuffer sbf = new StringBuffer("Good");//Sychronized ( Thread Safe )
+        sbf.deleteCharAt(0);
+        System.out.println(sbf);
+        StringBuilder sb = new StringBuilder("Java");// Non Sychronized ( Not Thread Safe )
+        sb.append('s');
         System.out.println(sb);
-          //String comparison
-        String p ="Java";
-        String q ="Learning";
-        String r ="java";
+        ////String comparison
+        String p = "Java";
+        String q = "Learning";
+        String r = "java";
         p.equals(q);
-        System.out.println( p.equals(q));//value
-        System.out.println(p==q);//ref variable
+        System.out.println(p.equals(q));//value
+        System.out.println(p == q);//ref variable
         System.out.println(p.equals(r));
-        System.out.println(p==r);
+        System.out.println(p == r);
         System.out.println(p.equalsIgnoreCase(q));
         System.out.println(p.equalsIgnoreCase(r));
         ////Trim
@@ -42,19 +42,27 @@ public class StringConcept {
         String b = g.trim();
         System.out.println(b);
         //Split
-        String f ="i am Navigating to java Learning";
+        String f = "i am Navigating to java Learning";
+        String n = "MR akm sm Tohidur Rahman ltd";
+
         System.out.println(f);
-         String f1[] = f.split(" ");
+        String f1[] = f.split(" ");
 
-         for (int i=0;i<f1.length;i++){
-             System.out.println(f1[i]);
-
-         }
-
-
-
-
-
+        for (int i = 0; i < f1.length; i++) {
+            System.out.println(f1[i]);
+        }
+        //String substring method
+        String j = "Java Learning";
+        int l = j.length();
+        System.out.println(l);
+        System.out.println(j.substring(5));
+        String k ="Knowledge";
+        System.out.println("#########################" );
+        System.out.println("I am using substring two parameter : " + k.substring(4,7));
+        //Starts and End With
+        String B ="Book Learning";
+        System.out.println( B.startsWith("Book") );
+        System.out.println( B.endsWith("Learning") );
 
 
 
