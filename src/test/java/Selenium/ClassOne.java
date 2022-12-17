@@ -52,22 +52,21 @@ public class ClassOne {
         //Alert
         driver.findElement(By.xpath("//input[@id='confirmbtn']")).click();
         Thread.sleep(3000);
-      String  alertmsg =  driver.switchTo().alert().getText();
+        String alertmsg = driver.switchTo().alert().getText();
         System.out.println(alertmsg);
         driver.switchTo().alert().accept();
 
-       String pageHeader =  driver.findElement(By.xpath("//h1")).getText();
+        String pageHeader = driver.findElement(By.xpath("//h1")).getText();
         System.out.println(pageHeader);
 // How to Scroll
-       // WebElement scrollTo =  driver.findElement(By.xpath("//button[@id='mousehover']"));
+        // WebElement scrollTo =  driver.findElement(By.xpath("//button[@id='mousehover']"));
         WebElement sc = driver.findElement(By.xpath("//a[text()='Latest News']"));
-        JavascriptExecutor js = ( JavascriptExecutor ) driver;
-        js.executeScript("arguments[0].scrollIntoView();",sc);
-
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", sc);
 
 
         Thread.sleep(5000l);
-       // driver.quit();
+        // driver.quit();
 
 
     }
