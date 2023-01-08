@@ -59,6 +59,7 @@ public class ClassOne {
 //
 //        String pageHeader = driver.findElement(By.xpath("//h1")).getText();
 //        System.out.println(pageHeader);
+
 // How to Scroll
       WebElement scrollTo =  driver.findElement(By.xpath("//button[@id='mousehover']"));
         //WebElement sc = driver.findElement(By.xpath("//a[text()='Latest News']"));

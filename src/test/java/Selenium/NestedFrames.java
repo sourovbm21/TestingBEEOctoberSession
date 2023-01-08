@@ -57,8 +57,9 @@ driver.quit();
      List<WebElement> allCountryNames = driver.findElements(By.xpath("//ul[@id='ui-id-1']//li//div"));
     System.out.println(allCountryNames.size());
     for (int i=0;i<allCountryNames.size();i++){
-        System.out.println(allCountryNames.get(i).getText());
+        //System.out.println(allCountryNames.get(i).getText());
        String CountryName =allCountryNames.get(i).getText();
+        System.out.println(CountryName);
        if (CountryName.equals("Bangladesh")){
            allCountryNames.get(i).click();
        }
